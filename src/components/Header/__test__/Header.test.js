@@ -28,27 +28,27 @@ describe('<Header />', () => {
     });
   });
 
-  // describe('find by', () => {
-  //   it('should render the text from prop', async () => {
-  //     render(<Header title="My Header" />);
-  //     const headingElement = await screen.findByText(/my header/i);
-  //     expect(headingElement).toBeInTheDocument();
-  //   });
-  // });
+  describe('find by', () => {
+    it('should render the text from prop', async () => {
+      render(<Header title="My Header" />);
+      const headingElement = await screen.findByText(/my header/i);
+      expect(headingElement).toBeInTheDocument();
+    });
+  });
 
-  // describe('query by', () => {
-  //   it('should render the text from prop', () => {
-  //     render(<Header title="My Header" />);
-  //     const headingElement = screen.queryByText(/my header/i);
-  //     expect(headingElement).toBeInTheDocument();
-  //   });
-  // });
+  describe('query by', () => {
+    it('should render the text from prop', () => {
+      render(<Header title="My Header" />);
+      const headingElement = screen.queryByText(/my header/i);
+      expect(headingElement).toBeInTheDocument();
+    });
+  });
 
-  // describe('get all by role', () => {
-  //   it('should render the text from prop', () => {
-  //     render(<Header title="My Header" />);
-  //     const headingElements = screen.getAllByRole('heading');
-  //     expect(headingElements.length).toBe(2);
-  //   });
-  // });
+  describe('get all by role', () => {
+    it('should render the text from prop', () => {
+      render(<Header title="My Header" />);
+      const headingElements = screen.getAllByRole('heading');
+      expect(headingElements.length).toBe(2);
+    });
+  });
 });
